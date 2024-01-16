@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @EPF78Code
 - 👀 I’m interested in creating an app
-- 🌱 I’m currently learning Visual Basic
+- 🌱 I’m currently learning Computing
 - 💞️ I’m looking to collaborate on nothing by the moment
 - 📫 How to reach me, Discord: epf78
 
