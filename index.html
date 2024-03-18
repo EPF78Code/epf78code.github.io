@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPF78Code's Epic Endeavor</title>
+    <title>EPF78Code's Interactive Realm</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             text-align: center;
             margin: 50px;
-            background-color: #f0f0f0;
+            background-image: url("background.jpg"); /* Replace with your desired background image URL */
+            background-size: cover;
+            background-position: center;
         }
 
         #scrolling-text {
             white-space: nowrap;
             overflow: hidden;
-            border-right: 2px solid #000;
+            border-right: 2px solid black;
             font-size: 24px;
-            animation: typing 1.5s steps(10, end) infinite;
+            animation: typing 3s steps(40, end) infinite;
         }
 
         @keyframes typing {
@@ -25,13 +27,34 @@
                 border-color: transparent;
             }
             50% {
-                border-color: #000;
+                border-color: black;
+            }
+        }
+
+        #scrolling-text:hover {
+            animation: glow 1s ease-in-out alternate infinite;
+        }
+
+        @keyframes glow {
+            from, to {
+                text-shadow: 0 0 0 black;
+            }
+            50% {
+                text-shadow: 0 0 10px #fff;
             }
         }
     </style>
 </head>
 <body>
     <h1>Welcome to EPF78Code's World!</h1>
-    <div id="scrolling-text">EPF78Code</div>
+    <h2 id="scrolling-text">EPF78Code</h2>
+    <script>
+        // JavaScript for hover effect
+        const textElement = document.getElementById("scrolling-text");
+
+        textElement.addEventListener("mouseover", () => {
+            textElement.style.cursor = "pointer"; // Change cursor style on hover
+        });
+    </script>
 </body>
 </html>
